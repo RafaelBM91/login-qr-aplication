@@ -1,7 +1,3 @@
 # React Development Enviroment
 
-## Ambiente de desarrollo para react.js
-
-## Plus example hoc react
-
-### ready - listo
+## lectura y escritura de codigo QR

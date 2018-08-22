@@ -1,13 +1,12 @@
 {
-  "name": "react-dev-env",
+  "name": "login-qr-aplication",
   "version": "1.0.0",
-  "description": "react development environment - ambiente de desarrollo para react.js",
+  "description": "react development environment - implementacion de generador y lector de codigo QR",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack",
-    "devNoServererver": "webpack --d --watch",
-    "dev": "webpack-dev-server --content-base=public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "webpack --mode production ./src/index.tsx --output ./public/js/bundle.js",
+    "start": "node ./server/index.js",
+    "dev": "webpack-dev-server --content-base=public"
   },
   "keywords": [
     "webpack",
@@ -18,15 +17,20 @@
     "typescript",
     "node",
     "javascript",
-    "hoc"
+    "hoc",
+    "QR"
   ],
   "author": "Rafael Briceño TW @rafaelbm91 <rafaelbm9126@gmail.com/>",
   "license": "MIT",
   "dependencies": {
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
+    "crypto-js": "^3.1.9-1",
+    "jsqr": "^1.1.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-qr-svg": "^2.1.0",
+    "react-router-dom": "^4.3.1",
     "styled-components": "^3.3.3"
   },
   "devDependencies": {
